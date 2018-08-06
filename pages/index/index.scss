@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import "../../variable";
+
+.container {
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .appbar{
+    background-color: rgba(255, 255, 255, 0.9);
+    //align-items: center;
+
+    .user-avatar {
+      height: 35px;
+      width: 35px;
+      margin-right: rpx(20);
+      border-radius: 50%;
+      margin-left: $box-width;
+      background-color: $bg-color;
+    }
+  }
+  .body {
+    margin-right: $box-width;
+    margin-left: $box-width;
+    .promotion-images {
+      height: rpx(330);
+      .slide-image {
+        background-color: $bg-color;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: rpx(4);
+        overflow: hidden;
+      }
+    }
+    .title {
+      justify-content: space-between;
+      align-items: center;
+      line-height: rpx(35);
+      padding-left: rpx(10);
+      border-left: rpx(6) solid $theme-color;
+      margin-top: rpx(25);
+      margin-bottom: rpx(35);
+      .tips {
+        font-weight: 600;
+      }
+      .action {
+        font-size: 10pt;
+        color: $theme-color;
+      }
+    }
+  }
+
+
+  .popup-publish {
+    background-color: #fff;
+    width: rpx(700);
+    border-radius: rpx(10);
+    padding-top: rpx(20);
+    padding-bottom: rpx(20);
+    box-shadow: $shadow;
+    .grid {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .item {
+        $height: rpx(100);
+
+        width: 25%;
+        height: $height;
+        line-height: $height;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

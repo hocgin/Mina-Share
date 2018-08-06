@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.container .appbar {
+  z-index: 1;
+  position: fixed;
+  top: 0; }
+  .container .appbar .arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container .appbar .arrow-left .box {
+      padding: 18rpx;
+      border-radius: 50%;
+      background-color: rgba(136, 136, 136, 0.36); }
+.container .images {
+  height: 500rpx; }
+  .container .images .slide-image {
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%; }
+.container .detail {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 1rpx #F0F0F0; }
+  .container .detail .head {
+    margin-bottom: 20rpx; }
+    .container .detail .head .image {
+      margin-right: 20rpx;
+      position: relative;
+      z-index: 1;
+      margin-top: -50rpx;
+      flex-shrink: 0;
+      width: 150rpx;
+      height: 150rpx;
+      padding: 5rpx;
+      background-color: #fff;
+      border: 1rpx solid #D0D0D1; }
+    .container .detail .head .content .row {
+      justify-content: space-between;
+      align-items: center; }
+      .container .detail .head .content .row .title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 500; }
+      .container .detail .head .content .row .datetime {
+        font-size: 9pt;
+        color: #B5B5B5; }
+    .container .detail .head .content .summary {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 9pt;
+      font-weight: 300;
+      color: #959599;
+      text-align: justify; }
+  .container .detail .body {
+    margin-bottom: 20rpx;
+    justify-content: space-between;
+    align-items: center; }
+    .container .detail .body .status {
+      font-size: 9pt;
+      font-weight: 400;
+      align-items: center;
+      color: #959599; }
+      .container .detail .body .status .icon {
+        color: #F1423C;
+        margin-right: 5rpx; }
+    .container .detail .body .control .btn {
+      background-color: #F1423C;
+      padding: 5rpx 30rpx;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 50rpx;
+      font-size: 10pt;
+      margin: 0 15rpx;
+      box-shadow: 2rpx 2rpx 5rpx #F1423C; }
+  .container .detail .footer {
+    margin-bottom: 20rpx;
+    font-size: 11pt;
+    font-weight: 300;
+    text-align: justify; }
+  .container .detail .toolbar {
+    justify-content: space-between;
+    align-items: center; }
+    .container .detail .toolbar .btn {
+      padding: 20rpx;
+      color: #959599;
+      border: solid 1rpx #F0F0F0;
+      border-radius: 10%;
+      margin: 0 10rpx; }
+.container .discussion {
+  margin: 40rpx 20rpx; }
+
+/*# sourceMappingURL=detail.wxss.map */

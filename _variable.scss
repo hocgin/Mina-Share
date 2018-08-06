@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/**
+ * 函数
+ */
+@function rpx($value) {
+  @return $value * 1rpx;
+}
+
+/**
+ * 代码块
+ */
+@mixin max-line($value){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $value;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * 变量
+ */
+$box-width: rpx(20);
+
+$theme-color: #F1423C;
+
+$googleGreenColor: #10AB56;
+
+$bg-color: #FAFAFA;
+
+$line: solid rpx(1) #F0F0F0;
+
+//$theme-shadow: 3rpx 3rpx 8rpx $theme-color;
+$theme-shadow: 2rpx 2rpx 5rpx $theme-color;
+
+$shadow: 0 0 10rpx #888;
+
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

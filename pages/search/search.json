@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cg-icon": "/component/cg-icon/index",
+    "zan-search": "/zanui/search/index",
+    "cg-card": "/component/cg-card/cg-card"
+  }
+}

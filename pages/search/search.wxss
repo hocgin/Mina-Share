@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.container .fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 2rpx 2rpx 5rpx #F1423C; }
+.container .results {
+  margin-left: 20rpx;
+  margin-right: 20rpx; }
+
+/*# sourceMappingURL=search.wxss.map */

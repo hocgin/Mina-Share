@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "../../variable";
+
+/**
+中文
+ */
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: rpx(40);
+}
+
+.log-item {
+  margin: rpx(10);
+}

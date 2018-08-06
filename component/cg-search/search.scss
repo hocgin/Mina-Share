@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../../variable";
+
+.search-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  color: rgba(181, 181, 187, 0.9);
+  padding-bottom: rpx(10);
+  padding-top: rpx(10);
+  border-radius: rpx(40);
+  .icon {
+    margin-left: rpx(20);
+    margin-right: rpx(20);
+  }
+  .tips {
+    font-size: 11pt;
+  }
+}

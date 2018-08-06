@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.container .fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+.container .appbar {
+  background-color: rgba(255, 255, 255, 0.9); }
+  .container .appbar .user-avatar {
+    height: 35px;
+    width: 35px;
+    margin-right: 20rpx;
+    border-radius: 50%;
+    margin-left: 20rpx;
+    background-color: #FAFAFA; }
+.container .body {
+  margin-right: 20rpx;
+  margin-left: 20rpx; }
+  .container .body .promotion-images {
+    height: 330rpx; }
+    .container .body .promotion-images .slide-image {
+      background-color: #FAFAFA;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      border-radius: 4rpx;
+      overflow: hidden; }
+  .container .body .title {
+    justify-content: space-between;
+    align-items: center;
+    line-height: 35rpx;
+    padding-left: 10rpx;
+    border-left: 6rpx solid #F1423C;
+    margin-top: 25rpx;
+    margin-bottom: 35rpx; }
+    .container .body .title .tips {
+      font-weight: 600; }
+    .container .body .title .action {
+      font-size: 10pt;
+      color: #F1423C; }
+.container .popup-publish {
+  background-color: #fff;
+  width: 700rpx;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  box-shadow: 0 0 10rpx #888; }
+  .container .popup-publish .grid {
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .container .popup-publish .grid .item {
+      width: 25%;
+      height: 100rpx;
+      line-height: 100rpx;
+      box-sizing: border-box; }
+
+/*# sourceMappingURL=index.wxss.map */

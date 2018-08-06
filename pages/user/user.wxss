@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.container {
+  /**
+   * 用户信息
+   */
+  /**
+   * 用户收藏/关注/消息
+   */ }
+  .container .user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #F1423C;
+    color: #fff; }
+    .container .user-info .avatar {
+      width: 128rpx;
+      height: 128rpx;
+      margin-left: 20rpx;
+      margin-right: 20rpx;
+      border-radius: 50%;
+      border: solid 4rpx #fff;
+      background-color: #FAFAFA; }
+    .container .user-info .detailed {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container .user-info .detailed .username {
+        font-size: 13pt;
+        display: block;
+        font-weight: 500; }
+      .container .user-info .detailed .description {
+        font-size: 8pt;
+        font-weight: inherit; }
+  .container .user-tab {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    background-color: #F1423C;
+    color: #fff;
+    padding: 5rpx 0 5rpx;
+    position: relative;
+    box-shadow: 2rpx 2rpx 5rpx #F1423C; }
+    .container .user-tab .tab-item {
+      flex: 1;
+      font-size: 11pt;
+      display: flex;
+      height: 100rpx;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .container .user-tab .tab-item .title {
+        font-size: 8pt;
+        font-weight: inherit; }
+
+/*# sourceMappingURL=user.wxss.map */

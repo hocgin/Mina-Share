@@ -1,0 +1,8 @@
+{
+  "backgroundColor": "#F1423C",
+  "navigationBarBackgroundColor": "#F1423C",
+  "disableScroll": true,
+  "usingComponents": {
+    "cg-icon": "/component/cg-icon/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "zan-tag": "/zanui/tag/index",
+    "zan-loadmore": "/zanui/loadmore/index",
+    "cg-icon": "/component/cg-icon/index"
+  }
+}

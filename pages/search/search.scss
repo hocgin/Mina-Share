@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "../../variable";
+.container {
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: $theme-shadow;
+  }
+  .results {
+    margin-left: $box-width;
+    margin-right: $box-width;
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "variable", "zanui/index";
+
+/**
+ * 公有类
+ */
+.appbar {
+  align-items: center;
+  .arrow-left {
+    flex:0 0 60px;
+    text-align: center;
+  }
+  .title {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    justify-content: center;
+    font-size: 12pt;
+    font-weight: 500;
+  }
+  .right-placeholder {
+    flex:0 0 60px;
+  }
+}

@@ -1,0 +1,2 @@
+- font-weight: 400;
+- font-size: 10pt;

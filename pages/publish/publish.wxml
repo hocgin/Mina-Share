@@ -1,0 +1,18 @@
+<view class="container">
+
+    <!--顶部栏-->
+    <view class="row appbar"
+          style="height:{{DEFAULT_HEADER_HEIGHT}};padding-top: {{STATUS_BAR_HEIGHT}};">
+        <view class="arrow-left" bindtap="navigateBack">
+            <cg-icon type="arrow-left"></cg-icon>
+        </view>
+        <view class="title">发布
+        </view>
+        <view class="right-placeholder"></view>
+    </view>
+
+
+
+
+
+</view>

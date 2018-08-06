@@ -1,0 +1,74 @@
+<view class="container">
+
+    <!--顶部栏-->
+    <view class="row appbar"
+          style="height:{{DEFAULT_HEADER_HEIGHT}};padding-top: {{STATUS_BAR_HEIGHT}}">
+        <view class="arrow-left" bindtap="navigateBack">
+            <view class="box">
+                <cg-icon type="arrow-left"
+                         style="color: #fff"></cg-icon>
+            </view>
+        </view>
+    </view>
+
+    <!--图片-->
+    <swiper class="images" indicator-dots="{{true}}"
+            autoplay="{{false}}"
+            interval="{{10000}}"
+            duration="{{1000}}">
+        <block wx:for="{{content.images}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"
+                       mode="aspectFill"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!--信息-->
+    <view class="column detail">
+        <view class="row head">
+            <image class="image"
+                   src="https://hocg.in/Resume/img/avatar.png"></image>
+            <view class="column content">
+                <view class="row">
+                    <text class="title">淘宝</text>
+                    <text class="datetime">2018/08/06</text>
+                </view>
+                <view class="summary">淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.</view>
+            </view>
+        </view>
+        <view class="row body">
+            <view class="row status">
+                <cg-icon type="huo" class="icon"></cg-icon>
+                <text class="number">10086°</text>
+            </view>
+            <view class="row control">
+                <view class="btn">点赞</view>
+                <view class="btn">获取</view>
+            </view>
+        </view>
+        <view class="row footer">
+            淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.
+        </view>
+        <view class="row toolbar">
+            <view class="row">
+                <zan-tag plain>购物</zan-tag>
+            </view>
+            <view class="row">
+                <view class="btn collect">
+                    <cg-icon type="collect2"></cg-icon>
+                </view>
+                <view class="btn share">
+                    <cg-icon type="share2"></cg-icon>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!--评论-->
+    <view class="discussion">
+        <zan-loadmore type="text"
+                      text="评论暂未开启"></zan-loadmore>
+    </view>
+
+</view>

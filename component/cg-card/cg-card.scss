@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "../../variable";
+
+.container {
+  border-top: $line;
+  box-sizing: border-box;
+  align-items: center;
+  .image {
+    flex-shrink: 0;
+    width: rpx(150);
+    height: rpx(150);
+    box-sizing: border-box;
+    margin: rpx(15);
+    border-radius: 25%;
+    box-shadow: $shadow;
+    background-color: $bg-color;
+  }
+  .content {
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-left: rpx(10);
+    .title {
+      @include max-line(1);
+    }
+    .tags {
+      font-size: 9pt;
+      .tag {
+        color: $googleGreenColor;
+        box-sizing: border-box;
+      }
+    }
+    .summary {
+      @include max-line(2);
+      font-size: 9pt;
+      font-weight: 300;
+      color: #959599;
+    }
+  }
+  .control {
+    padding: rpx(20) rpx(40);
+    border-left: $line;
+    font-size: 10pt;
+    font-weight: 700;
+    .action {
+
+    }
+    .number {
+
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../../variable";
+.container {
+
+  /**
+   * 用户信息
+   */
+  .user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: $theme-color;
+    color: #fff;
+    .avatar {
+      width: rpx(128);
+      height: rpx(128);
+      margin-left: $box-width;
+      margin-right: $box-width;
+      border-radius: 50%;
+      border: solid rpx(4) #fff;
+      background-color: $bg-color;
+    }
+
+    .detailed {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .username {
+        font-size: 13pt;
+        display: block;
+        font-weight: 500;
+      }
+      .description {
+        font-size: 8pt;
+        font-weight: inherit;
+      }
+    }
+  }
+
+  /**
+   * 用户收藏/关注/消息
+   */
+  .user-tab {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    background-color: $theme-color;
+    color: #fff;
+    padding: rpx(5) 0 rpx(5);
+    position: relative;
+    box-shadow: $theme-shadow;
+    .tab-item {
+      flex: 1;
+      font-size: 11pt;
+      display: flex;
+      height: rpx(100);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .title {
+        font-size: 8pt;
+        font-weight: inherit;
+      }
+    }
+  }
+}

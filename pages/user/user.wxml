@@ -1,0 +1,48 @@
+<view class="container">
+
+    <!--顶部栏-->
+    <view class="row appbar"
+          style="height:{{DEFAULT_HEADER_HEIGHT}};padding-top: {{STATUS_BAR_HEIGHT}};background-color: #F1423C">
+        <view class="arrow-left" bindtap="navigateBack">
+            <cg-icon type="arrow-left"
+                     style="color: #fff"></cg-icon>
+        </view>
+        <view class="title"
+              style="color: #fff">个人中心
+        </view>
+        <view class="right-placeholder"></view>
+    </view>
+
+
+    <!-- 个人信息 -->
+    <view class="user-info">
+        <image class="avatar" mode="scaleToFill"
+               src="{{ user.avatarUrl }}"/>
+        <view class="detailed">
+            <text class="username">{{ user.nickName }}</text>
+            <text class="description">这家伙很懒，什么也没留下</text>
+        </view>
+    </view>
+
+    <!-- 显示面板 -->
+    <view class="user-tab">
+        <navigator class="tab-item" url="/pages/collection/index?current=0">
+            <text>{{data[0]}}</text>
+            <text class="title">收藏</text>
+        </navigator>
+        <navigator class="tab-item" url="/pages/collection/index?current=1">
+            <text>{{data[1]}}</text>
+            <text class="title">发布</text>
+        </navigator>
+        <navigator class="tab-item" url="/pages/messages/index">
+            <text>{{data[2]}}</text>
+            <text class="title">点赞</text>
+        </navigator>
+    </view>
+
+    <view>
+        <button open-type="getUserInfo"
+                bindgetuserinfo="_loadUserInfo">获取授权</button>
+    </view>
+
+</view>
