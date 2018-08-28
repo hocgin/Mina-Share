@@ -1,0 +1,7 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "van-button": "/vant-weapp/button/index",
+    "cg-icon": "/component/cg-icon/index"
+  }
+}

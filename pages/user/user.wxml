@@ -19,7 +19,7 @@
         <image class="avatar" mode="scaleToFill"
                src="{{ user.avatarUrl }}"/>
         <view class="detailed">
-            <text class="username">{{ user.nickName }}</text>
+            <text class="username">{{ user.nickName || '未登录' }}</text>
             <text class="description">这家伙很懒，什么也没留下</text>
         </view>
     </view>
@@ -41,8 +41,10 @@
     </view>
 
     <view>
-        <button open-type="getUserInfo"
-                bindgetuserinfo="_loadUserInfo">获取授权</button>
+        <van-button open-type="getUserInfo"
+                    bind:getuserinfo="_loadUserInfo">获取授权</van-button>
+        <van-button send-message-img>截图</van-button>
+        <van-button show-message-card>会话内消息</van-button>
     </view>
 
 </view>

@@ -1,0 +1,33 @@
+<view class="container">
+
+    <!--顶部栏-->
+    <view class="row appbar"
+          style="height:{{DEFAULT_HEADER_HEIGHT}};padding-top: {{STATUS_BAR_HEIGHT}};">
+        <view class="arrow-left" bindtap="navigateBack">
+            <cg-icon type="arrow-left"></cg-icon>
+        </view>
+        <view class="title">授权窗口</view>
+        <view class="right-placeholder"></view>
+    </view>
+
+    <view class="body">
+        <view class="header column">
+            <image src="https://hocg.in/Resume/img/avatar.png"/>
+            <text class="title">好用榜单</text>
+        </view>
+
+        <view class="content">
+            <view class="tips">申请获取以下权限</view>
+            <view class="text">获得你的公开信息(昵称，头像等)</view>
+        </view>
+
+        <van-button class="login-btn"
+                    open-type="getUserInfo"
+                    type="primary"
+                    size="large"
+                    bind:getuserinfo="_loadUserInfo">微信授权
+        </van-button>
+    </view>
+
+    <view class="footer">登录即表示同意<text>《好用榜单用户协议》</text></view>
+</view>

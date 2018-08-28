@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/login/login.js
 const app = getApp();
 Page({
 
@@ -7,19 +7,17 @@ Page({
      */
     data: {
         DEFAULT_HEADER_HEIGHT: wx.DEFAULT_HEADER_HEIGHT + "px",
-        STATUS_BAR_HEIGHT: wx.STATUS_BAR_HEIGHT + "px",
-        user: {
-        },
-        hasUser: false,
-
-        data: [99, 12, 0]
+        STATUS_BAR_HEIGHT: wx.STATUS_BAR_HEIGHT + "px"
+    },
+    navigateBack() {
+        wx.navigateBack();
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this._loadUserInfo();
+
     },
 
     /**
@@ -70,9 +68,7 @@ Page({
     onShareAppMessage: function () {
 
     },
-    navigateBack() {
-        wx.navigateBack()
-    },
+
     _loadUserInfo() {
         if (!!app.globalData.user) {
             this.setData({
@@ -88,6 +84,7 @@ Page({
                         user: res.userInfo,
                         hasUser: true
                     });
+                    wx.navigateBack();
                 }
             });
         }

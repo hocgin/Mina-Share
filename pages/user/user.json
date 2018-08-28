@@ -3,6 +3,7 @@
   "navigationBarBackgroundColor": "#F1423C",
   "disableScroll": true,
   "usingComponents": {
-    "cg-icon": "/component/cg-icon/index"
+    "cg-icon": "/component/cg-icon/index",
+    "van-button": "/vant-weapp/button/index"
   }
 }
