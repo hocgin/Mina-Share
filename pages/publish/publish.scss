@@ -32,7 +32,11 @@
     flex-grow: 1;
   }
 }
-
+.btn-make {
+  background-color: rgba(70, 70, 70, .6);
+  padding: rpx(10);
+  border-radius: 50%;
+}
 .upload-image {
   position: relative;
   .swiper-image {

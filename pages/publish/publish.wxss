@@ -45,6 +45,11 @@
 .row1 .info {
   flex-grow: 1; }
 
+.btn-make {
+  background-color: rgba(70, 70, 70, 0.6);
+  padding: 10rpx;
+  border-radius: 50%; }
+
 .upload-image {
   position: relative; }
   .upload-image .swiper-image {

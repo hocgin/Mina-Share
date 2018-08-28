@@ -14,9 +14,8 @@
         </view>
         <zan-search
                 placeholder="搜索..."
-                useCancel="{{true}}"
-                cancelStyle="color: #fff"
-                searchStyle="background-color: #F1423C"
+                show-action
+                background="#F1423C"
         />
     </view>
 
