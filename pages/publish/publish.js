@@ -6,7 +6,11 @@ Page({
      */
     data: {
         DEFAULT_HEADER_HEIGHT: wx.DEFAULT_HEADER_HEIGHT + "px",
-        STATUS_BAR_HEIGHT: wx.STATUS_BAR_HEIGHT + "px"
+        STATUS_BAR_HEIGHT: wx.STATUS_BAR_HEIGHT + "px",
+        defaultImage: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+        imgUrls: [
+            'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+        ]
     },
 
     /**

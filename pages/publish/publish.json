@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "cg-icon": "/component/cg-icon/index"
+    "cg-icon": "/component/cg-icon/index",
+    "van-field": "/vant-weapp/field/index",
+    "cell-group": "/vant-weapp/cell-group/index",
+    "van-icon": "/vant-weapp/icon/index",
+    "van-button": "/vant-weapp/button/index"
   }
 }

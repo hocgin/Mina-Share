@@ -5,7 +5,7 @@
     <view class="row fixed appbar"
           style="height:{{DEFAULT_HEADER_HEIGHT}};border-bottom:{{hasScroll ? 'solid 1px #F0F0F0':'none'}};padding-top: {{STATUS_BAR_HEIGHT}};">
         <image bindtap="gotoUser" class="user-avatar" src="{{user.avatarUrl}}"
-               mode="cover"></image>
+               mode="cover"/>
         <cg-search style="flex-grow: 1;margin-right: 40px"
                    bindtap="gotoSearch"></cg-search>
         <view class="right-placeholder"></view>
@@ -31,7 +31,7 @@
         <!--内容-->
         <view class="row title">
             <text class="tips">今日推荐</text>
-            <text class="action" bindtap="togglePublishPopup">我要投稿</text>
+            <text class="action" bindtap="gotoPublishClassify">我要投稿</text>
         </view>
         <view class="column">
             <cg-card wx:for="{{[1,2,3,4,5,6,7,8,2,3,4,5,6,7,8]}}"></cg-card>
@@ -39,39 +39,4 @@
 
     </view>
 
-    <!-- 我要投稿 -->
-    <zan-popup type="center" show="{{ isShowPublish }}" bindclose="togglePublishPopup">
-        <view class="column popup-publish">
-            <view class="row grid">
-                <navigator class="item"
-                           url="/pages/publish/publish">小程序</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">公众号</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">IOS</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">Android</navigator>
-            </view>
-            <view class="row grid">
-                <navigator class="item"
-                           url="/pages/publish/publish">浏览插件</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">WinOS</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">MacOS</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">游戏</navigator>
-            </view>
-            <view class="row grid">
-                <navigator class="item"
-                           url="/pages/publish/publish">网站</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">文章</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">旅游</navigator>
-                <navigator class="item"
-                           url="/pages/publish/publish">优惠</navigator>
-            </view>
-        </view>
-    </zan-popup>
 </view>

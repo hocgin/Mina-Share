@@ -32,15 +32,17 @@
             <view class="column content">
                 <view class="row">
                     <text class="title">淘宝</text>
-                    <text class="datetime">2018/08/06</text>
+                    <text class="datetime">5小时前</text>
                 </view>
                 <view class="summary">淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.</view>
             </view>
         </view>
         <view class="row body">
-            <view class="row status">
-                <cg-icon type="huo" class="icon"></cg-icon>
-                <text class="number">10086°</text>
+            <view class="row user">
+                <image class="user-avatar"
+                       src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
+                       mode="cover"/>
+                <text class="user-name">hocgin</text>
             </view>
             <view class="row control">
                 <view class="btn">点赞</view>
@@ -50,9 +52,13 @@
         <view class="row footer">
             淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.淘宝网是亚太地区较大的网络零售、商圈,由阿里巴巴集团在2003年5月创立。淘宝网是中国深受欢迎的网购零售平台,拥有近5亿的注册用户数,每天有超过6000.
         </view>
+        <view class="row tags">
+            <zan-tag plain>购物</zan-tag>
+        </view>
         <view class="row toolbar">
-            <view class="row">
-                <zan-tag plain>购物</zan-tag>
+            <view class="row status">
+                <cg-icon type="huo" class="icon"></cg-icon>
+                <text class="number">10086°</text>
             </view>
             <view class="row">
                 <view class="btn collect">
@@ -67,8 +73,7 @@
 
     <!--评论-->
     <view class="discussion">
-        <zan-loadmore type="text"
-                      text="评论暂未开启"></zan-loadmore>
+        评论暂未开启
     </view>
 
 </view>

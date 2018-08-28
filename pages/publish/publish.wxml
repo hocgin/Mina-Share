@@ -11,8 +11,86 @@
         <view class="right-placeholder"></view>
     </view>
 
+    <view class="row row1">
+        <view class="column image">
+            <image class="default-image"
+                    src="{{ defaultImage }}"
+                   mode="aspectFill"
+            />
+            <van-icon name="add"
+                      class="plus"
+                      size="20pt"/>
+        </view>
+        <view class="column info">
+            <cell-group>
+                <van-field
+                        value="{{ username }}"
+                        required
+                        clearable
+                        icon="question"
+                        placeholder="请输入链接"
+                        bind:click-icon="onClickIcon"
+                />
+            </cell-group>
 
+            <cell-group>
+                <van-field
+                        value="{{ username }}"
+                        label="标题"
+                        clearable
+                        icon="question"
+                        placeholder="可选, 默认读取URL标题"
+                        bind:click-icon="onClickIcon"
+                />
+            </cell-group>
+        </view>
+    </view>
+    <cell-group class="upload-image">
+        <swiper class="swiper-image" indicator-dots="true">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"
+                           mode="scaleToFill"
+                    />
+                </swiper-item>
+            </block>
+        </swiper>
+        <text class="text">展示图片</text>
+        <van-icon name="add"
+                  class="plus"
+                  size="20pt"/>
+    </cell-group>
+    <cell-group>
+        <van-field
+                value="{{ message }}"
+                label="描述"
+                required
+                type="textarea"
+                placeholder="请输入...(255字以内)"
+                autosize
+                border="{{ false }}"
+        />
+    </cell-group>
+    <cell-group>
+        <van-field
+                value="{{ username }}"
+                label="简介"
+                clearable
+                icon="question"
+                placeholder="可选，默认读取描述前125个字符"
+                bind:click-icon="onClickIcon"
+        />
+    </cell-group>
 
+    <view class="btn">
+        <van-button type="primary" size="large">投稿</van-button>
+    </view>
+
+    <!--URL-->
+    <!--简介-->
+    <!--图片-->
+    <!--描述-->
+    <!--展示图片-->
 
 
 </view>

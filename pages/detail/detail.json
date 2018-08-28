@@ -1,7 +1,6 @@
 {
   "usingComponents": {
-    "zan-tag": "/zanui/tag/index",
-    "zan-loadmore": "/zanui/loadmore/index",
+    "zan-tag": "/vant-weapp/tag/index",
     "cg-icon": "/component/cg-icon/index"
   }
 }

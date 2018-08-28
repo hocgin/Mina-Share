@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "../../variable";
+
+.appbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.classify-group {
+  .classify {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    //border: solid 1px;
+    margin: rpx(2);
+    box-sizing: border-box;
+    height: rpx(350);
+    overflow: hidden;
+    position: relative;
+    border-radius: rpx(6);
+    background-image: linear-gradient(hsla(0, 0%, 56%, .3), rgba(70, 70, 70, .6));
+
+    image {
+      //filter: blur(rpx(3));
+      z-index: -1;
+      position: relative;
+    }
+    .content {
+      position: absolute;
+      top: rpx(4);
+      bottom: rpx(4);
+      left: rpx(4);
+      right: rpx(4);
+      overflow: hidden;
+      .title {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14pt;
+        position: absolute;
+        bottom: rpx(120);
+        right: rpx(4);
+        left: 0;
+      }
+    }
+  }
+}

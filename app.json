@@ -5,7 +5,8 @@
     "pages/user/user",
     "pages/detail/detail",
     "pages/search/search",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/publish-classify/publish-classify"
   ],
   "window": {
     "navigationStyle": "custom",

@@ -25,7 +25,6 @@ Page({
         user: {},
         hasUser: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        isShowPublish: false,
 
         // 推广
         promotion: {
@@ -49,6 +48,7 @@ Page({
             heat: 289
         }]
     },
+
     //事件处理函数
     gotoUser: function () {
         wx.navigateTo({
@@ -65,9 +65,9 @@ Page({
             url: '/pages/search/search'
         });
     },
-    togglePublishPopup() {
-        this.setData({
-            isShowPublish: !this.data.isShowPublish
+    gotoPublishClassify() {
+        wx.navigateTo({
+            url: '/pages/publish-classify/publish-classify'
         });
     },
     _fixedAppbar() {

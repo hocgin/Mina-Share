@@ -1,3 +1,73 @@
-/* pages/publish/publish.wxss */
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.btn {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50rpx;
+  z-index: 100; }
+
+.row1 .image {
+  position: relative; }
+  .row1 .image .default-image {
+    width: 160rpx;
+    height: 100%; }
+  .row1 .image .plus {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50rpx; }
+.row1 .info {
+  flex-grow: 1; }
+
+.upload-image {
+  position: relative; }
+  .upload-image .swiper-image {
+    width: 100%;
+    background-image: linear-gradient(rgba(143, 143, 143, 0.3), rgba(70, 70, 70, 0.6)); }
+    .upload-image .swiper-image image {
+      width: 100%;
+      background-image: linear-gradient(rgba(143, 143, 143, 0.3), rgba(70, 70, 70, 0.6)); }
+  .upload-image .text {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(108, 108, 108, 0.8);
+    color: #fff; }
+  .upload-image .plus {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx; }
 
 /*# sourceMappingURL=publish.wxss.map */

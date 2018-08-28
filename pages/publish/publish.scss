@@ -1,1 +1,64 @@
-/* pages/publish/publish.wxss */
+@charset "UTF-8";
+@import "../../variable";
+
+.btn {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  padding: rpx(50);
+  z-index: 100;
+}
+.row1 {
+  .image {
+    position: relative;
+    .default-image {
+      width: rpx(160);
+      height: 100%;
+    }
+    .plus {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      text-align: center;
+      color: #fff;
+      margin-bottom: rpx(50);
+    }
+  }
+  .info {
+    flex-grow: 1;
+  }
+}
+
+.upload-image {
+  position: relative;
+  .swiper-image {
+    width: 100%;
+    background-image: linear-gradient(hsla(0, 0%, 56%, .3), rgba(70, 70, 70, .6));
+    image {
+      width: 100%;
+      background-image: linear-gradient(hsla(0, 0%, 56%, .3), rgba(70, 70, 70, .6));
+    }
+  }
+  .text {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(108, 108, 108, 0.8);
+    color: #fff;
+  }
+  .plus {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    margin-right: rpx(20);
+    margin-bottom: rpx(20);
+  }
+}

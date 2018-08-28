@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ * 函数
+ */
+/**
+ * 代码块
+ */
+/**
+ * 变量
+ */
+/**
+ * 公用类
+ */
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.appbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.classify-group .classify {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 2rpx;
+  box-sizing: border-box;
+  height: 350rpx;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6rpx;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.3), rgba(70, 70, 70, 0.6)); }
+  .classify-group .classify image {
+    z-index: -1;
+    position: relative; }
+  .classify-group .classify .content {
+    position: absolute;
+    top: 4rpx;
+    bottom: 4rpx;
+    left: 4rpx;
+    right: 4rpx;
+    overflow: hidden; }
+    .classify-group .classify .content .title {
+      color: #fff;
+      font-weight: 400;
+      font-size: 14pt;
+      position: absolute;
+      bottom: 120rpx;
+      right: 4rpx;
+      left: 0; }
+
+/*# sourceMappingURL=publish-classify.wxss.map */

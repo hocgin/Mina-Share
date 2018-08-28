@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zan-tag": "/vant-weapp/tag/index",
+    "cg-icon": "/component/cg-icon/index"
+  }
+}

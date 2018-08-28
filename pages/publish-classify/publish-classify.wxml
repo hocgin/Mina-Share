@@ -1,0 +1,59 @@
+<view class="container">
+
+    <!--顶部栏-->
+    <view class="row appbar"
+          style="height:{{DEFAULT_HEADER_HEIGHT}};padding-top: {{STATUS_BAR_HEIGHT}};">
+        <view class="arrow-left" bindtap="navigateBack">
+            <cg-icon type="arrow-left"
+                     style="color: #000"></cg-icon>
+        </view>
+        <view class="title"
+              style="color: #000">投搞类型
+        </view>
+        <view class="right-placeholder"></view>
+    </view>
+
+    <view class="classify-group" style="margin-top: {{APP_BAR_HEIGHT}};">
+        <view class="row">
+            <view class="column classify" bindtap="gotoPublish">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">小程序</text>
+                </view>
+            </view>
+            <view class="column classify">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">APP</text>
+                </view>
+            </view>
+            <view class="column classify">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">公众号</text>
+                </view>
+            </view>
+        </view>
+        <view class="row">
+            <view class="column classify">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">文章</text>
+                </view>
+            </view>
+            <view class="column classify">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">软件</text>
+                </view>
+            </view>
+            <view class="column classify">
+                <image src="https://user-gold-cdn.xitu.io/collection/default-images/13.jpg?imageView2/1/w/800/h/400/q/85/format/jpg/interlace/1"/>
+                <view class="content">
+                    <text class="title">通用</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
