@@ -4,7 +4,8 @@
     <!--顶部栏-->
     <view class="row fixed appbar"
           style="height:{{DEFAULT_HEADER_HEIGHT}};border-bottom:{{hasScroll ? 'solid 1px #F0F0F0':'none'}};padding-top: {{STATUS_BAR_HEIGHT}};">
-        <image bindtap="gotoUser" class="user-avatar" src="{{user.avatarUrl}}"
+        <image bindtap="gotoUser" class="user-avatar"
+               src="{{user.avatarUrl}}"
                mode="cover"/>
         <cg-search style="flex-grow: 1;margin-right: 40px"
                    bindtap="gotoSearch"></cg-search>

@@ -70,23 +70,15 @@ Page({
     },
 
     _loadUserInfo() {
-        if (!!app.globalData.user) {
-            this.setData({
-                user: app.globalData.user,
-                hasUser: true
-            });
-        } else {
-            // 在没有 open-type=getUserInfo 版本的兼容处理
+        if (!app.globalData.user) {
             wx.getUserInfo({
                 success: res => {
                     app.globalData.user = res.userInfo;
-                    this.setData({
-                        user: res.userInfo,
-                        hasUser: true
-                    });
                     wx.navigateBack();
                 }
             });
+        } else {
+            wx.navigateBack();
         }
     }
 });

@@ -10,7 +10,6 @@ Page({
         STATUS_BAR_HEIGHT: wx.STATUS_BAR_HEIGHT + "px",
         user: {
         },
-        hasUser: false,
 
         data: [99, 12, 0]
     },
@@ -19,7 +18,6 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this._loadUserInfo();
     },
 
     /**
@@ -33,7 +31,9 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        this.setData({
+            user: app.globalData.user
+        });
     },
 
     /**
@@ -72,24 +72,5 @@ Page({
     },
     navigateBack() {
         wx.navigateBack()
-    },
-    _loadUserInfo() {
-        if (!!app.globalData.user) {
-            this.setData({
-                user: app.globalData.user,
-                hasUser: true
-            });
-        } else {
-            // 在没有 open-type=getUserInfo 版本的兼容处理
-            wx.getUserInfo({
-                success: res => {
-                    app.globalData.user = res.userInfo;
-                    this.setData({
-                        user: res.userInfo,
-                        hasUser: true
-                    });
-                }
-            });
-        }
     }
 });
