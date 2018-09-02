@@ -32,7 +32,7 @@ Page({
      */
     onShow: function () {
         this.setData({
-            user: app.globalData.user
+            user: app.getUserInfo()
         });
     },
 

@@ -74,6 +74,7 @@ Page({
             wx.getUserInfo({
                 success: res => {
                     app.globalData.user = res.userInfo;
+                    console.log('授权成功', res);
                     wx.navigateBack();
                 }
             });

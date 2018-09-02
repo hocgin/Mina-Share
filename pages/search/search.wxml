@@ -14,9 +14,11 @@
         </view>
         <zan-search
                 placeholder="搜索..."
-                show-action
                 background="#F1423C"
-        />
+                custom-class="search"
+                cancel-class="cancel-btn"
+        >
+        </zan-search>
     </view>
 
     <view class="column results" style="margin-top: {{fixed_height}}">

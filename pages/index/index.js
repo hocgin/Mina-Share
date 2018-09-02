@@ -7,7 +7,7 @@ Page({
     },
     onShow() {
         this.setData({
-            user: app.globalData.user
+            user: app.getUserInfo()
         });
     },
     onPageScroll(e) {
@@ -46,12 +46,7 @@ Page({
 
     //事件处理函数
     gotoUser: function () {
-        let url = '/pages/user/user';
-        if (!app.globalData.user) {
-            url = '/pages/login/login';
-        }
-
-        wx.navigateTo({url});
+        app.gotoNeedLogin('/pages/user/user');
     },
     gotoDetail() {
         wx.navigateTo({
@@ -64,9 +59,7 @@ Page({
         });
     },
     gotoPublishClassify() {
-        wx.navigateTo({
-            url: '/pages/publish-classify/publish-classify'
-        });
+        app.gotoNeedLogin('/pages/publish-classify/publish-classify');
     },
     _fixedAppbar() {
         let query = wx.createSelectorQuery(),
