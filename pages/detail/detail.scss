@@ -60,6 +60,13 @@
           .datetime {
             font-size: 9pt;
             color: #B5B5B5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-clock {
+              display:inherit;
+              margin-right: rpx(5);
+            }
           }
         }
         .summary {

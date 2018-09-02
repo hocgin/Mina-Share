@@ -68,7 +68,13 @@
         font-weight: 500; }
       .container .detail .head .content .row .datetime {
         font-size: 9pt;
-        color: #B5B5B5; }
+        color: #B5B5B5;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .container .detail .head .content .row .datetime .icon-clock {
+          display: inherit;
+          margin-right: 5rpx; }
     .container .detail .head .content .summary {
       display: -webkit-box;
       -webkit-box-orient: vertical;
