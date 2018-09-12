@@ -1,10 +1,10 @@
 "use strict";
-let API = {
+export default {
     /**
      * ======== 配置 ========
      */
     config: {
-        base: 'http://127.0.0.1:8080',
+        base: 'http://mxdvpf.natappfree.cc',
         file_server: 'http://127.0.0.1:8080/file',
     },
     /**
@@ -37,49 +37,71 @@ let API = {
         return this._download(url, success, fail, complete);
     },
     /**
+     * ======== 正式请求 ========
+     */
+
+    /**
+     * 登陆
+     * @param params
+     *  - code
+     *  - encryptedData
+     *  - iv
+     * @param success
+     * @param fail
+     * @param complete
+     * @returns {*}
+     */
+    login(params, success, fail, complete) {
+        return this._get('/login', params, success, fail, complete);
+    },
+    /**
      * ======== 基础函数 ========
      */
     _post(url, data, success, fail, complete) {
+        let that = this;
         return wx.request({
-            url: this.base.concat(url),
+            url: that.config.base + url,
             header: {},
             method: 'POST',
             data: data || {},
-            success: success || this.success,
-            fail: fail || this.fail,
-            complete: complete || this.complete,
+            success: success || that.success,
+            fail: fail || that.error,
+            complete: complete || that.complete,
         });
     },
     _get(url, data, success, fail, complete) {
+        let that = this;
         return wx.request({
-            url: this.base.concat(url),
+            url: that.config.base + url,
             header: {},
             method: 'GET',
             data: data || {},
-            success: success || this.success,
-            fail: fail || this.fail,
-            complete: complete || this.complete,
+            success: success || that.success,
+            fail: fail || that.error,
+            complete: complete || that.complete,
         });
     },
     _upload(fpath, data, success, fail, complete) {
+        let that = this;
         return wx.uploadFile({
-            url: this.file_server,
+            url: that.config.file_server,
             header: {},
             filePath: fpath,
             name: 'file',
             formData: data || {},
-            success: success || this.success,
-            fail: fail || this.fail,
-            complete: complete || this.complete,
+            success: success || that.success,
+            fail: fail || that.error,
+            complete: complete || that.complete,
         });
     },
     _download(url, success, fail, complete) {
+        let that = this;
         return wx.downloadFile({
             url: url,
             header: {},
-            success: success || this.success,
-            fail: fail || this.fail,
-            complete: complete || this.complete,
+            success: success || that.success,
+            fail: fail || that.error,
+            complete: complete || that.complete,
         });
     },
     success(result) {

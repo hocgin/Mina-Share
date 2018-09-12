@@ -1,4 +1,5 @@
-// pages/login/login.js
+import api from '../../utils/api'
+
 const app = getApp();
 Page({
 
@@ -71,13 +72,25 @@ Page({
 
     _loadUserInfo() {
         if (!app.globalData.user) {
-            wx.getUserInfo({
-                success: res => {
-                    app.globalData.user = res.userInfo;
-                    console.log('授权成功', res);
-                    wx.navigateBack();
+            wx.login({
+                success(result) {
+                    wx.getUserInfo({
+                        success(result2) {
+                            app.globalData.user = result2.userInfo;
+                            api.login({
+                                code: result.code,
+                                encryptedData: result2.encryptedData,
+                                iv: result2.iv
+                            }, (result3) => {
+                                console.debug('登陆结果', result3);
+                            });
+                            console.log('授权成功', result2);
+                            wx.navigateBack();
+                        }
+                    });
                 }
             });
+
         } else {
             wx.navigateBack();
         }
