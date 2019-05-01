@@ -1,6 +1,8 @@
-- font-weight: 400;
-- font-size: 10pt;
+## 分享榜单
+> 小程序项目
 
-## emmm
-APP 条 / 详情
-文章 条 / 详情
+## 界面
+![image](./介绍.gif)
+
+## LICENSE
+Apache

@@ -4,7 +4,7 @@ export default {
      * ======== 配置 ========
      */
     config: {
-        base: 'http://mxdvpf.natappfree.cc',
+        base: 'http://7tbxn5.natappfree.cc',
         file_server: 'http://127.0.0.1:8080/file',
     },
     /**
@@ -52,7 +52,7 @@ export default {
      * @returns {*}
      */
     login(params, success, fail, complete) {
-        return this._get('/login', params, success, fail, complete);
+        return this._post('/wechat/login', params, success, fail, complete);
     },
     /**
      * ======== 基础函数 ========
